@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[beonduty]]></title>
+    <url>%2F20190313%2Fbeonduty%2F</url>
+    <content type="text"><![CDATA[work is boring.]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F20190313%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[org-guider]]></title>
+    <url>%2F20181201%2Forg-guider%2F</url>
+    <content type="text"><![CDATA[Org-mode 简明指导 1 介绍** 1.1 前言 compact 简明 guide 向导 preface 前言 plain-text 纯文本 author 写作 literal 文字的 reproducible 可再生的 derivative 衍生 comprehensive 全面的 intend 有意Org是一个用来记笔记，维护TODO清单和做项目计划的快速高效的纯文本模式。它也是一个写作和发布的系统，它支持通过源代码的方式来进行文字编程和重复性研究。这个文档是《comprehensive Org-mode manual》的压缩衍生版本。它包含所有基本的功能与命令，同时拥有可自定义的重要提示。它是为汗颜于200页之巨的手册而折返的初学者而有意准备的。 ** 1.2 安装重要：如果你现在使用的Org版本是Emacs发行版所集成的，请跳过这部分直接看1.3[激活，第1面]部分。如果你已经从网上下载了org发行版的.zip或.tar文件，或者通过Git架构，最好直接在发行版目录中运行它。你需要在Emacs的加载路径下添加lisp子目录。这样做，在.emacs文件中添加下面的行:(setq load-path (cons “~/path/to/orgdir/lisp” load-path))(setq load-path (cons “~/path/to/orgdir/contrib/lisp” load-path))如果你已经通过git或者tar ball获得Org，你需要运行下面的命令来生成自动加载文件。命令：make autoloads ** 1.3 激活 activation 激活 agenda 议程 capure 捕获在你的.emacs配置文件中添加下面的行。最后4行为一些命令定义了热键，你可以设置适合你自己的热键。;; 下面的行是必须的。设置你自己的热键(global-set-key “\C-cl” ‘org-store-link)(global-set-key “\C-ca” ‘org-agenda)(global-set-key “\C-cc” ‘org-capure)(global-set-key “\C-cb” ‘org-switchb) ** 1.4 反馈 feedback 反馈 remark 备注如果你在使用Org时发现问题，或者你对Org有问题、备注或想法，请写邮件到Org的寄送地址emacs-orgmode@gnu.org. 若想知道怎么提交bug报告的更多信息，请查看主手册。 文档结构structure 文档结构outline 大纲flexible 灵活的Org是基于大纲模式前且提供了灵活的命令来编辑文档结构。** 大纲 hierarchical 分级的 representation 表现 overview 总结，概述 achieved 实现 simplifies 简化 functionality 功能性 bound 跳跃 Org是实现在大纲模式之上的。大纲允许用分级的结构来组织一个文档，这是对笔记与思想的最好展现（最少对我来说）。对于这种结构的概述就是通过折叠文档的部分区域来显示主要的文档结构和当前的工作区域。Org通过一个单独的命令来控制全文的显示隐藏极大的简化了大纲的使用，org-cycle命令，它是通过TAB键跳转的。 ** 2.2 大字标题 headlines 大字标题 margin 边缘 footnote 脚注 whitespace 空白 describe 描述 realize 实现大字标题是定义大纲树的结构的。Org中的大字标题是在最左边的区域以星号键开始。例如： * 最高级别的大字标题 ** 第2级别 *** 第3级别 相关文字 *** 第3级别 相关文字 * 另一个最高级别的大字标题 注意，一个在org-footnote-section命令执行后命令的大字标题，会被Footnote初始特殊对待。使用导出功能时拥有大纲功能的子树将会被静默忽略。 ** 2.3 可见的循环]]></content>
+      <categories>
+        <category>翻译</category>
+      </categories>
+      <tags>
+        <tag>org-mode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[古寒日课]]></title>
+    <url>%2F20181130%2Fnonsense%2F</url>
+    <content type="text"><![CDATA[2018-11-29 复习Java对象与类相关的知识，只是看没有总结。好多东西只有理解了实现原理才会真正记忆，只是一时致用的话，只会劳神费时。 承包商评价的日常运维，处理ERP2EAM接口的问题，上班时间基本在摸鱼。 腹部初级按两倍的量来做的，身体疲惫后也显得轻松，明天可以做腹部中级。 看了一个安全大佬的日记，很受感染，一时意气喷薄。感觉自己好渺小呀，就是一个菜鸡。人是应该被孤立而存在的。 2018-11-30 看corejava 打算翻译下简明的org-mode操作手册，大概40页。下周末完成吧。刚才安装了个Hexo的org-mode的插件，文件是创建成了，但是生成博客的时候有问题，本来是想以后用org写博客呢，今天就不先搞了。 今天真的是在摸鱼呀，啊啊啊啊。。。还有乱七八糟的事。 腹部中级搞成胸部中级，搞的稀碎，胡亂路過，以後晚飯不能吃的太飽了。 明天把書上的代碼敲一遍，然後整理下vim的相關文件吧。 2018-12-01 今天幾乎什麼也沒有做，看了兩個電影。 2018-12-02 今天同昨天一樣，什麼也沒有做，工作日的時候希望星期天可以多做些功課，到了週末就什麼也不會去做。這種循環真的很可怕呀。 2018-12-03~2018-12-07 哇，時間過得好快呀，就像一張白紙落滿灰塵，就是時間走過的痕跡呀。5天過去了，這周主要在做一個小信封定時提醒的功能，Maximo7版本上有個corntask的功能，只需要關聯一個類就可以觸發定時任務。主要是對JDBC操作，我搞了兩天，真的好慢呀，好多東西看過不用就會很快的忘記的。]]></content>
+      <categories>
+        <category>说梦</category>
+      </categories>
+      <tags>
+        <tag>daily</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Git 学习记录]]></title>
+    <url>%2F20181114%2Fgit-manual%2F</url>
+    <content type="text"><![CDATA[git简单模块划分 工作区 缓存区 本地仓库 远程仓库 创建本地仓库 在创建仓库之前首先配置用户信息 12345678910git config --global user.name "noocl"git config --global user.email "songci1106@live.com" # 这个是github帐户git config --global --list # 查看全局配置mkdir repo-democd repo-demogit init # 初始化本地仓库echo "repo-demo content" &gt; readme.mdgit add readme.md # 把工作区修改的文件添加到缓存区git commmit -m "first commit" # 把缓冲区的文件添加到版本库（本地仓库）git status # 查看仓库状态 把暂存区的文件恢复到工作区1234echo "cache content" &gt;&gt; readme.mdgit add readme.mdgit reset HEAD readme.md # 这步时readme.md的内容还没有回退git checkout -- readme.md # 这步时内容进行回退 回退版本12345678echo "version content" &gt;&gt; readme.mdgit add readme.mdgit commit -m "second commit"git log # 查看所有版本git reset --hard 版本号 # 回退到相应的版本清空本地仓库git rm readme.md # 清空本地仓库文件git commit -m "delete readme.md" # 提交 本地仓库与远程仓库进行关联1234ssh-keygen -t rsa -C "songci1106@live.com" # 创建 SSH Keycat ~/.ssh/id_rsa.pub # 打印密钥# 登录github，把生成的密钥与github帐户进行绑定ssh -T git@github.com # 检测本地与github能否连通 添加远程仓库 先在github上面新建一个新仓库remote-demo。 123456789101112mkdir remote-demo &amp;&amp; mv remote-demogit init echo "remote-demo content" &gt; readme.mdgit add readme.mdgit commit -m "first commit"git remote add origin git@github.com:noocl/remote-demo.git # 本地仓库的与github仓库的进行关联## git pull origin master [--allow-unrelated-histories] # 提交到远程仓库git push -u origin master # 提交到远程仓库echo "add new line content" &gt;&gt; readme.mdgit add readme.mdgit commit -m "second commit"git push # 第2次，直接提交 克隆仓库 先在github上面创建一个仓库clone-demo 123456git clone git@github.com:noocl/clone-demo.git # 把远程仓库克隆到本地cd clone-demoecho "clone-demo" &gt; readme.mdgit add readme.mdgit commit -m "first commit"git push # 从本地仓库提交到远程仓库，直接push 标签管理 前提：先在github上面创建一个远程仓库tag-demo 1234567891011mkdir tag-demo &amp;&amp; cd tag-demoecho "tag-demo content" &gt; readme.mdgit add readme.mdgit commit -m "first commit"git remote add origin git@github.com:noocl/tag-demo.git # 与远程仓库进行关联git push -u origin master # 提交到远程仓库git tag v1.0.1 # 创建标签git tag # 查看所有标签git push origin v1.0.1 # 把标签提交到远程仓库git tag -d v1.0.1 # 删除本地仓库标签git push origin :refs/tags/v1.0.1 # 删除远程仓库标签 分支管理123456789101112131415mkdir branch-demo &amp;&amp; cd branch-demogit init echo "branch-demo content" &gt; readme.mdgit add readme.mdgit commit -m "first commit"git branch br01 # 创建分支git branch # 查看分支，行首的*表示当前分支git checkout br01 # 切换分支echo "br01 content" &gt;&gt; readme.mdgit add readme.mdgit commit -m "branch commit"# 现在要开始把tr01分支合并到master分支上，首先要切回到master分支git checkout mastergit merge br01git branch -d br01 # 删除分支]]></content>
+      <categories>
+        <category>知识图</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[github pages + Hexo 搭建博客]]></title>
+    <url>%2F20181104%2Fgithub-pages-hexo-build-blog%2F</url>
+    <content type="text"><![CDATA[准备工作 node 用来生成静态页面。 npm nodejs的包管理器，用来安装hexo-cli。 git 把本地的Hexo内容提交到github github 用来做Hexo的远程仓库，域名，服务器。 个人域名 github pages的默认域名是：yourname.github.io，如有闲置域名可以进行解析绑定。 安装Hexo12345npm install hexo-cli -gmkdir ~/Documents/hexoblogcd hexobloghexo initnpm install 安装next主题1git clone https://github.com/theme-next/hexo-theme-next themes/next 博客配置文件配置文件：_config.yml12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394# Hexo Configuration## Docs: https://hexo.io/docs/configuration.html## Source: https://github.com/hexojs/hexo/# Sitetitle: 式微subtitle: 年与时驰 意与志去 遂成枯落 多不接世description: 干，干他，干他妈的！keywords:author: 非略language: zh-CNtimezone: Asia/Shanghai# URL## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'url: http://www.cpucsi.comroot: /permalink: :year/:month/:day/:title/permalink_defaults:# Directorysource_dir: sourcepublic_dir: publictag_dir: tagsarchive_dir: archivescategory_dir: categoriescode_dir: downloads/codei18n_dir: :langskip_render:# Writingnew_post_name: :title.md # File name of new postsdefault_layout: posttitlecase: false # Transform title into titlecaseexternal_link: true # Open external links in new tabfilename_case: 0render_drafts: falsepost_asset_folder: falserelative_link: falsefuture: truehighlight: enable: true line_number: true auto_detect: false tab_replace: # Home page setting# path: Root path for your blogs index page. (default = '')# per_page: Posts displayed per page. (0 = disable pagination)# order_by: Posts order. (Order by date descending by default)index_generator: path: '' per_page: 10 order_by: -date # Category &amp; Tagdefault_category: uncategorizedcategory_map:tag_map:# Date / Time format## Hexo uses Moment.js to parse and display date## You can customize the date format as defined in## http://momentjs.com/docs/#/displaying/format/date_format: YYYY-MM-DDtime_format: HH:mm:ss# Pagination## Set per_page to 0 to disable paginationper_page: 10pagination_dir: page# Extensions## Plugins: https://hexo.io/plugins/## Themes: https://hexo.io/themes/theme: next# ongc search configsearch: path: search.xml field: post format: html limit: 10000# ongc rss configplugins: hexo-generate-feed# Deployment## Docs: https://hexo.io/docs/deployment.htmldeploy: type: git repo: https://github.com/noocl/noocl.github.io.gitbrachanc: master 配置本地git帐户信息12git config --global user.name "noocl"git config --global user.email "songci1106@live.com" 本地生成ssh keys1ssh-keygen -t rsa -C "songci1106@live.com" 添加ssh key 到 github 对应账号1ccat ~/.ssh/id_rsa.pub 验证keys是否成功12ssh -T git@github.com# 输入yes，出现successfully时表示成功。 添加CNAME解析文件123456vim ~/Documents/hexoblog/source/CNAMESwww.cpucsi.com# 当删除CNAMES文件重新生成静态文件部署时，还是会跳转到解析的域名，清除缓存再操作即可hexo clean # 清除缓存文件 (db.json) 和已生成的静态文件 (public)hexo g # 生成缓存和静态文件hexo d # 重新部署到服务器 生成静态文件12hexo generate# 如果这里报错：无法连接git或找不到git，请执行npm install hexo-deployer-git --save 启动本地服务123hexo server输入localhost:4000即可查看博客-p,--port 设置本地服务指定端口 部署到github12hexo deploy# -g,--generate 在部署之前先生成静态文件]]></content>
+      <tags>
+        <tag>github</tag>
+      </tags>
+  </entry>
+</search>
