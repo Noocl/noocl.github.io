@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[在项目中理解数据库三大范式]]></title>
+    <url>%2F20190314%2Fthree-normal-form%2F</url>
+    <content type="text"><![CDATA[三大范式是对数据库表的约束。]]></content>
+      <tags>
+        <tag>SQL</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[beonduty]]></title>
     <url>%2F20190313%2Fbeonduty%2F</url>
     <content type="text"><![CDATA[work is boring.]]></content>
