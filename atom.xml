@@ -10,7 +10,7 @@
   <id>http://www.cpucsi.com/</id>
   
   <author>
-    <name>古寒</name>
+    <name>Chaos</name>
     
   </author>
   
@@ -31,11 +31,11 @@
   </entry>
   
   <entry>
-    <title>system-win-faq.md</title>
+    <title>常见问题分析</title>
     <link href="http://www.cpucsi.com/20190319/system-win-faq/"/>
     <id>http://www.cpucsi.com/20190319/system-win-faq/</id>
     <published>2019-03-19T07:36:37.000Z</published>
-    <updated>2019-03-19T07:37:46.544Z</updated>
+    <updated>2019-03-19T10:07:42.484Z</updated>
     
     <content type="html"><![CDATA[<p>记录一下常见的问题</p>]]></content>
     
@@ -59,7 +59,7 @@
     <link href="http://www.cpucsi.com/20190314/three-normal-form/"/>
     <id>http://www.cpucsi.com/20190314/three-normal-form/</id>
     <published>2019-03-14T00:49:31.000Z</published>
-    <updated>2019-03-14T00:51:11.820Z</updated>
+    <updated>2019-03-19T10:07:08.792Z</updated>
     
     <content type="html"><![CDATA[<p>三大范式是对数据库表的约束。</p>]]></content>
     
@@ -72,6 +72,8 @@
       
     
     </summary>
+    
+      <category term="SQL" scheme="http://www.cpucsi.com/categories/SQL/"/>
     
     
       <category term="SQL" scheme="http://www.cpucsi.com/tags/SQL/"/>
@@ -105,7 +107,7 @@
     <link href="http://www.cpucsi.com/20181201/org-guider/"/>
     <id>http://www.cpucsi.com/20181201/org-guider/</id>
     <published>2018-11-30T16:24:38.000Z</published>
-    <updated>2019-03-13T15:29:44.315Z</updated>
+    <updated>2019-03-19T10:06:24.134Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Org-mode-简明指导"><a href="#Org-mode-简明指导" class="headerlink" title="Org-mode 简明指导"></a>Org-mode 简明指导</h2><ul><li>1 介绍<br>** 1.1 前言<br> compact 简明<br> guide   向导<br> preface 前言<br> plain-text 纯文本<br> author  写作<br> literal 文字的<br> reproducible 可再生的<br> derivative  衍生<br> comprehensive 全面的<br> intend  有意<br>Org是一个用来记笔记，维护TODO清单和做项目计划的快速高效的纯文本模式。它也是一个写作和发布的系统，它支持通过源代码的方式来进行文字编程和重复性研究。<br>这个文档是《comprehensive Org-mode manual》的压缩衍生版本。它包含所有基本的功能与命令，同时拥有可自定义的重要提示。它是为汗颜于200页之巨的手册而折返的初学者而有意准备的。</li></ul><p>** 1.2 安装<br>重要：如果你现在使用的Org版本是Emacs发行版所集成的，请跳过这部分直接看1.3[激活，第1面]部分。<br>如果你已经从网上下载了org发行版的.zip或.tar文件，或者通过Git架构，最好直接在发行版目录中运行它。你需要在Emacs的加载路径下添加lisp子目录。这样做，在.emacs文件中添加下面的行:<br>(setq load-path (cons “~/path/to/orgdir/lisp” load-path))<br>(setq load-path (cons “~/path/to/orgdir/contrib/lisp” load-path))<br>如果你已经通过git或者tar ball获得Org，你需要运行下面的命令来生成自动加载文件。命令：<br>make autoloads</p><p>** 1.3 激活<br>   activation 激活<br>   agenda     议程<br>   capure     捕获<br>在你的.emacs配置文件中添加下面的行。最后4行为一些命令定义了热键，你可以设置适合你自己的热键。<br>;; 下面的行是必须的。设置你自己的热键<br>(global-set-key “\C-cl” ‘org-store-link)<br>(global-set-key “\C-ca” ‘org-agenda)<br>(global-set-key “\C-cc” ‘org-capure)<br>(global-set-key “\C-cb” ‘org-switchb)</p><p>** 1.4 反馈<br>   feedback    反馈<br>   remark      备注<br>如果你在使用Org时发现问题，或者你对Org有问题、备注或想法，请写邮件到Org的寄送地址<a href="mailto:emacs-orgmode@gnu.org" target="_blank" rel="noopener">emacs-orgmode@gnu.org</a>. 若想知道怎么提交bug报告的更多信息，请查看主手册。</p><ul><li>文档结构<br>structure    文档结构<br>outline      大纲<br>flexible     灵活的<br>Org是基于大纲模式前且提供了灵活的命令来编辑文档结构。<br>** 大纲<br> hierarchical  分级的<br> representation  表现<br> overview        总结，概述<br> achieved        实现<br> simplifies      简化<br> functionality   功能性<br> bound           跳跃<br> Org是实现在大纲模式之上的。大纲允许用分级的结构来组织一个文档，这是对笔记与思想的最好展现（最少对我来说）。对于这种结构的概述就是通过折叠文档的部分区域来显示主要的文档结构和当前的工作区域。Org通过一个单独的命令来控制全文的显示隐藏极大的简化了大纲的使用，org-cycle命令，它是通过TAB键跳转的。</li></ul><p>** 2.2 大字标题<br>   headlines    大字标题<br>   margin       边缘<br>   footnote     脚注<br>   whitespace   空白<br>   describe     描述<br>   realize      实现<br>大字标题是定义大纲树的结构的。Org中的大字标题是在最左边的区域以星号键开始。例如：</p><pre><code>* 最高级别的大字标题** 第2级别*** 第3级别    相关文字*** 第3级别    相关文字* 另一个最高级别的大字标题</code></pre><p>注意，一个在org-footnote-section命令执行后命令的大字标题，会被Footnote初始特殊对待。使用导出功能时拥有大纲功能的子树将会被静默忽略。</p><p>** 2.3 可见的循环</p>]]></content>
     
@@ -119,7 +121,7 @@
     
     </summary>
     
-      <category term="翻译" scheme="http://www.cpucsi.com/categories/%E7%BF%BB%E8%AF%91/"/>
+      <category term="Translate" scheme="http://www.cpucsi.com/categories/Translate/"/>
     
     
       <category term="org-mode" scheme="http://www.cpucsi.com/tags/org-mode/"/>
@@ -131,7 +133,7 @@
     <link href="http://www.cpucsi.com/20181130/nonsense/"/>
     <id>http://www.cpucsi.com/20181130/nonsense/</id>
     <published>2018-11-29T16:03:47.000Z</published>
-    <updated>2019-03-13T15:29:44.221Z</updated>
+    <updated>2019-03-19T10:06:10.417Z</updated>
     
     <content type="html"><![CDATA[<h2 id="2018-11-29"><a href="#2018-11-29" class="headerlink" title="2018-11-29"></a>2018-11-29</h2><ol><li>复习Java对象与类相关的知识，只是看没有总结。好多东西只有理解了实现原理才会真正记忆，只是一时致用的话，只会劳神费时。</li><li>承包商评价的日常运维，处理ERP2EAM接口的问题，上班时间基本在摸鱼。</li><li>腹部初级按两倍的量来做的，身体疲惫后也显得轻松，明天可以做腹部中级。</li><li>看了<a href="http://eternalsakura13.com/2099/09/18/study/" target="_blank" rel="noopener">一个安全大佬</a>的日记，很受感染，一时意气喷薄。感觉自己好渺小呀，就是一个菜鸡。人是应该被孤立而存在的。</li></ol><hr><h2 id="2018-11-30"><a href="#2018-11-30" class="headerlink" title="2018-11-30"></a>2018-11-30</h2><ol><li>看corejava</li><li>打算翻译下简明的org-mode操作手册，大概40页。下周末完成吧。刚才安装了个Hexo的org-mode的插件，文件是创建成了，但是生成博客的时候有问题，本来是想以后用org写博客呢，今天就不先搞了。</li><li>今天真的是在摸鱼呀，啊啊啊啊。。。还有乱七八糟的事。</li><li>腹部中级搞成胸部中级，搞的稀碎，胡亂路過，以後晚飯不能吃的太飽了。</li><li>明天把書上的代碼敲一遍，然後整理下vim的相關文件吧。</li></ol><hr><h2 id="2018-12-01"><a href="#2018-12-01" class="headerlink" title="2018-12-01"></a>2018-12-01</h2><ol><li>今天幾乎什麼也沒有做，看了兩個電影。</li></ol><hr><h2 id="2018-12-02"><a href="#2018-12-02" class="headerlink" title="2018-12-02"></a>2018-12-02</h2><ol><li>今天同昨天一樣，什麼也沒有做，工作日的時候希望星期天可以多做些功課，到了週末就什麼也不會去做。這種循環真的很可怕呀。</li></ol><h2 id="2018-12-03-2018-12-07"><a href="#2018-12-03-2018-12-07" class="headerlink" title="2018-12-03~2018-12-07"></a>2018-12-03~2018-12-07</h2><ol><li>哇，時間過得好快呀，就像一張白紙落滿灰塵，就是時間走過的痕跡呀。5天過去了，這周主要在做一個小信封定時提醒的功能，Maximo7版本上有個corntask的功能，只需要關聯一個類就可以觸發定時任務。主要是對JDBC操作，我搞了兩天，真的好慢呀，好多東西看過不用就會很快的忘記的。</li></ol>]]></content>
     
@@ -145,7 +147,7 @@
     
     </summary>
     
-      <category term="说梦" scheme="http://www.cpucsi.com/categories/%E8%AF%B4%E6%A2%A6/"/>
+      <category term="dream" scheme="http://www.cpucsi.com/categories/dream/"/>
     
     
       <category term="daily" scheme="http://www.cpucsi.com/tags/daily/"/>
@@ -157,7 +159,7 @@
     <link href="http://www.cpucsi.com/20181114/git-manual/"/>
     <id>http://www.cpucsi.com/20181114/git-manual/</id>
     <published>2018-11-14T15:36:17.000Z</published>
-    <updated>2019-03-13T15:29:44.037Z</updated>
+    <updated>2019-03-19T10:05:22.552Z</updated>
     
     <content type="html"><![CDATA[<h4 id="git简单模块划分"><a href="#git简单模块划分" class="headerlink" title="git简单模块划分"></a>git简单模块划分</h4><ul><li>工作区</li><li>缓存区</li><li>本地仓库</li><li>远程仓库</li></ul><hr><h4 id="创建本地仓库"><a href="#创建本地仓库" class="headerlink" title="创建本地仓库"></a>创建本地仓库</h4><blockquote><p>在创建仓库之前首先配置用户信息</p></blockquote><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">"noocl"</span></span><br><span class="line">git config --global user.email <span class="string">"songci1106@live.com"</span><span class="comment"># 这个是github帐户</span></span><br><span class="line">git config --global --list<span class="comment"># 查看全局配置</span></span><br><span class="line">mkdir repo-demo</span><br><span class="line"><span class="built_in">cd</span> repo-demo</span><br><span class="line">git init<span class="comment"># 初始化本地仓库</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"repo-demo content"</span> &gt; readme.md</span><br><span class="line">git add readme.md<span class="comment"># 把工作区修改的文件添加到缓存区</span></span><br><span class="line">git commmit -m <span class="string">"first commit"</span><span class="comment"># 把缓冲区的文件添加到版本库（本地仓库）</span></span><br><span class="line">git status<span class="comment"># 查看仓库状态</span></span><br></pre></td></tr></table></figure><hr><h4 id="把暂存区的文件恢复到工作区"><a href="#把暂存区的文件恢复到工作区" class="headerlink" title="把暂存区的文件恢复到工作区"></a>把暂存区的文件恢复到工作区</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">"cache content"</span> &gt;&gt; readme.md</span><br><span class="line">git add readme.md</span><br><span class="line">git reset HEAD readme.md<span class="comment"># 这步时readme.md的内容还没有回退</span></span><br><span class="line">git checkout -- readme.md<span class="comment"># 这步时内容进行回退</span></span><br></pre></td></tr></table></figure><hr><h4 id="回退版本"><a href="#回退版本" class="headerlink" title="回退版本"></a>回退版本</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">"version content"</span> &gt;&gt; readme.md</span><br><span class="line">git add readme.md</span><br><span class="line">git commit -m <span class="string">"second commit"</span></span><br><span class="line">git <span class="built_in">log</span><span class="comment"># 查看所有版本</span></span><br><span class="line">git reset --hard 版本号<span class="comment"># 回退到相应的版本</span></span><br><span class="line">清空本地仓库</span><br><span class="line">git rm readme.md<span class="comment"># 清空本地仓库文件</span></span><br><span class="line">git commit -m <span class="string">"delete readme.md"</span><span class="comment"># 提交</span></span><br></pre></td></tr></table></figure><hr><h4 id="本地仓库与远程仓库进行关联"><a href="#本地仓库与远程仓库进行关联" class="headerlink" title="本地仓库与远程仓库进行关联"></a>本地仓库与远程仓库进行关联</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"songci1106@live.com"</span><span class="comment"># 创建 SSH Key</span></span><br><span class="line">cat ~/.ssh/id_rsa.pub<span class="comment"># 打印密钥</span></span><br><span class="line"><span class="comment"># 登录github，把生成的密钥与github帐户进行绑定</span></span><br><span class="line">ssh -T git@github.com<span class="comment"># 检测本地与github能否连通</span></span><br></pre></td></tr></table></figure><h4 id="添加远程仓库"><a href="#添加远程仓库" class="headerlink" title="添加远程仓库"></a>添加远程仓库</h4><blockquote><p>先在github上面新建一个新仓库remote-demo。</p></blockquote><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">mkdir remote-demo &amp;&amp; mv remote-demo</span><br><span class="line">git init </span><br><span class="line"><span class="built_in">echo</span> <span class="string">"remote-demo content"</span> &gt; readme.md</span><br><span class="line">git add readme.md</span><br><span class="line">git commit -m <span class="string">"first commit"</span></span><br><span class="line">git remote add origin git@github.com:noocl/remote-demo.git<span class="comment"># 本地仓库的与github仓库的进行关联</span></span><br><span class="line"><span class="comment">## git pull origin master [--allow-unrelated-histories]# 提交到远程仓库</span></span><br><span class="line">git push -u origin master <span class="comment"># 提交到远程仓库</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"add new line content"</span> &gt;&gt; readme.md</span><br><span class="line">git add readme.md</span><br><span class="line">git commit -m <span class="string">"second commit"</span></span><br><span class="line">git push<span class="comment"># 第2次，直接提交</span></span><br></pre></td></tr></table></figure><hr><h4 id="克隆仓库"><a href="#克隆仓库" class="headerlink" title="克隆仓库"></a>克隆仓库</h4><blockquote><p>先在github上面创建一个仓库clone-demo</p></blockquote><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> git@github.com:noocl/<span class="built_in">clone</span>-demo.git<span class="comment"># 把远程仓库克隆到本地</span></span><br><span class="line"><span class="built_in">cd</span> <span class="built_in">clone</span>-demo</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"clone-demo"</span> &gt; readme.md</span><br><span class="line">git add readme.md</span><br><span class="line">git commit -m <span class="string">"first commit"</span></span><br><span class="line">git push<span class="comment"># 从本地仓库提交到远程仓库，直接push</span></span><br></pre></td></tr></table></figure><hr><h4 id="标签管理"><a href="#标签管理" class="headerlink" title="标签管理"></a>标签管理</h4><blockquote><p>前提：先在github上面创建一个远程仓库tag-demo</p></blockquote><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">mkdir tag-demo &amp;&amp; <span class="built_in">cd</span> tag-demo</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"tag-demo content"</span> &gt; readme.md</span><br><span class="line">git add readme.md</span><br><span class="line">git commit -m <span class="string">"first commit"</span></span><br><span class="line">git remote add origin git@github.com:noocl/tag-demo.git<span class="comment"># 与远程仓库进行关联</span></span><br><span class="line">git push -u origin master<span class="comment"># 提交到远程仓库</span></span><br><span class="line">git tag v1.0.1<span class="comment"># 创建标签</span></span><br><span class="line">git tag<span class="comment"># 查看所有标签</span></span><br><span class="line">git push origin v1.0.1<span class="comment"># 把标签提交到远程仓库</span></span><br><span class="line">git tag -d v1.0.1<span class="comment"># 删除本地仓库标签</span></span><br><span class="line">git push origin :refs/tags/v1.0.1<span class="comment"># 删除远程仓库标签</span></span><br></pre></td></tr></table></figure><hr><h4 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">mkdir branch-demo &amp;&amp; <span class="built_in">cd</span> branch-demo</span><br><span class="line">git init </span><br><span class="line"><span class="built_in">echo</span> <span class="string">"branch-demo content"</span> &gt; readme.md</span><br><span class="line">git add readme.md</span><br><span class="line">git commit -m <span class="string">"first commit"</span></span><br><span class="line">git branch br01<span class="comment"># 创建分支</span></span><br><span class="line">git branch<span class="comment"># 查看分支，行首的*表示当前分支</span></span><br><span class="line">git checkout br01<span class="comment"># 切换分支</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"br01 content"</span> &gt;&gt; readme.md</span><br><span class="line">git add readme.md</span><br><span class="line">git commit -m <span class="string">"branch commit"</span></span><br><span class="line"><span class="comment"># 现在要开始把tr01分支合并到master分支上，首先要切回到master分支</span></span><br><span class="line">git checkout master</span><br><span class="line">git merge br01</span><br><span class="line">git branch -d br01<span class="comment"># 删除分支</span></span><br></pre></td></tr></table></figure>]]></content>
     
@@ -174,7 +176,7 @@
     
     </summary>
     
-      <category term="知识图" scheme="http://www.cpucsi.com/categories/%E7%9F%A5%E8%AF%86%E5%9B%BE/"/>
+      <category term="map" scheme="http://www.cpucsi.com/categories/map/"/>
     
     
       <category term="git" scheme="http://www.cpucsi.com/tags/git/"/>
