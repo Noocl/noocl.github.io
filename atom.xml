@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.cpucsi.com/"/>
-  <updated>2019-03-19T07:37:46.544Z</updated>
+  <updated>2019-03-19T09:41:13.921Z</updated>
   <id>http://www.cpucsi.com/</id>
   
   <author>
@@ -15,6 +15,20 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我的故事</title>
+    <link href="http://www.cpucsi.com/20190319/%E6%88%91%E7%9A%84%E6%95%85%E4%BA%8B/"/>
+    <id>http://www.cpucsi.com/20190319/我的故事/</id>
+    <published>2019-03-19T09:41:13.000Z</published>
+    <updated>2019-03-19T09:41:13.921Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>system-win-faq.md</title>
