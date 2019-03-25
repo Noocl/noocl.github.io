@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.cpucsi.com/"/>
-  <updated>2019-03-24T11:37:37.694Z</updated>
+  <updated>2019-03-25T00:53:48.008Z</updated>
   <id>http://www.cpucsi.com/</id>
   
   <author>
@@ -17,9 +17,25 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>jiangxia03</title>
+    <link href="http://www.cpucsi.com/20190325/jiangxia03/"/>
+    <id>http://www.cpucsi.com/20190325/jiangxia03/</id>
+    <published>2019-03-25T00:51:08.000Z</published>
+    <updated>2019-03-25T00:53:48.008Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="江夏" scheme="http://www.cpucsi.com/tags/%E6%B1%9F%E5%A4%8F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>jiangxia-02</title>
-    <link href="http://www.cpucsi.com/20190324/jiangxia-02/"/>
-    <id>http://www.cpucsi.com/20190324/jiangxia-02/</id>
+    <link href="http://www.cpucsi.com/20190324/jiangxia02/"/>
+    <id>http://www.cpucsi.com/20190324/jiangxia02/</id>
     <published>2019-03-24T11:35:18.000Z</published>
     <updated>2019-03-24T11:37:37.694Z</updated>
     
@@ -40,8 +56,8 @@
   
   <entry>
     <title>江夏夜白-第一天</title>
-    <link href="http://www.cpucsi.com/20190323/%E6%B1%9F%E5%A4%8F%E5%A4%9C%E7%99%BD-%E7%AC%AC%E4%B8%80%E5%A4%A9/"/>
-    <id>http://www.cpucsi.com/20190323/江夏夜白-第一天/</id>
+    <link href="http://www.cpucsi.com/20190323/jiangxia01/"/>
+    <id>http://www.cpucsi.com/20190323/jiangxia01/</id>
     <published>2019-03-23T02:58:21.000Z</published>
     <updated>2019-03-23T03:02:06.965Z</updated>
     
@@ -84,8 +100,8 @@
   
   <entry>
     <title>我的故事</title>
-    <link href="http://www.cpucsi.com/20190319/%E6%88%91%E7%9A%84%E6%95%85%E4%BA%8B/"/>
-    <id>http://www.cpucsi.com/20190319/我的故事/</id>
+    <link href="http://www.cpucsi.com/20190319/my-destory/"/>
+    <id>http://www.cpucsi.com/20190319/my-destory/</id>
     <published>2019-03-19T09:41:13.000Z</published>
     <updated>2019-03-19T09:41:13.921Z</updated>
     
