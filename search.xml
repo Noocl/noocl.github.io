@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[sed]]></title>
+    <title><![CDATA[命令学习：sed]]></title>
     <url>%2F20190330%2Fsed%2F</url>
-    <content type="text"><![CDATA[取一个文本之中两行之间的数据1sed -n '10-30p' readme.md &gt;&gt; tmp.txt head与tail的小技巧123head -n 100 tmp.txt # 显示前100行的数据tail -n 100 tmp.txt # 显示后100行的数据tail -n +100 tmp.txt # 显示100行之后的数据]]></content>
+    <content type="text"><![CDATA[示例取一个文本之中两行之间的数据1sed -n '10-30p' readme.md &gt;&gt; tmp.txt head与tail的小技巧123head -n 100 tmp.txt # 显示前100行的数据tail -n 100 tmp.txt # 显示后100行的数据tail -n +100 tmp.txt # 显示100行之后的数据]]></content>
       <tags>
         <tag>command</tag>
       </tags>

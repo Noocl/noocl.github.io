@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.cpucsi.com/"/>
-  <updated>2019-03-30T14:17:18.190Z</updated>
+  <updated>2019-03-30T14:47:07.166Z</updated>
   <id>http://www.cpucsi.com/</id>
   
   <author>
@@ -17,19 +17,19 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>sed</title>
+    <title>命令学习：sed</title>
     <link href="http://www.cpucsi.com/20190330/sed/"/>
     <id>http://www.cpucsi.com/20190330/sed/</id>
     <published>2019-03-30T13:55:03.000Z</published>
-    <updated>2019-03-30T14:17:18.190Z</updated>
+    <updated>2019-03-30T14:47:07.166Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="取一个文本之中两行之间的数据"><a href="#取一个文本之中两行之间的数据" class="headerlink" title="取一个文本之中两行之间的数据"></a>取一个文本之中两行之间的数据</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed -n <span class="string">'10-30p'</span> readme.md &gt;&gt; tmp.txt</span><br></pre></td></tr></table></figure><hr><h4 id="head与tail的小技巧"><a href="#head与tail的小技巧" class="headerlink" title="head与tail的小技巧"></a>head与tail的小技巧</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">head -n 100tmp.txt<span class="comment"># 显示前100行的数据</span></span><br><span class="line">tail -n 100 tmp.txt<span class="comment"># 显示后100行的数据</span></span><br><span class="line">tail -n +100 tmp.txt<span class="comment"># 显示100行之后的数据</span></span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h3 id="取一个文本之中两行之间的数据"><a href="#取一个文本之中两行之间的数据" class="headerlink" title="取一个文本之中两行之间的数据"></a>取一个文本之中两行之间的数据</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed -n <span class="string">'10-30p'</span> readme.md &gt;&gt; tmp.txt</span><br></pre></td></tr></table></figure><hr><h4 id="head与tail的小技巧"><a href="#head与tail的小技巧" class="headerlink" title="head与tail的小技巧"></a>head与tail的小技巧</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">head -n 100 tmp.txt<span class="comment"># 显示前100行的数据</span></span><br><span class="line">tail -n 100 tmp.txt<span class="comment"># 显示后100行的数据</span></span><br><span class="line">tail -n +100 tmp.txt<span class="comment"># 显示100行之后的数据</span></span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h3 id=&quot;取一个文本之中两行之间的数据&quot;&gt;&lt;a href=&quot;#取一个文本之中两行之间的数据&quot; class=&quot;headerlink&quot; title=&quot;取一个文本之中两行之间的数据&quot;&gt;&lt;/a&gt;取一个文本之中两行之间的数据&lt;/h3&gt;&lt;figure class=&quot;highlight 
+        &lt;h2 id=&quot;示例&quot;&gt;&lt;a href=&quot;#示例&quot; class=&quot;headerlink&quot; title=&quot;示例&quot;&gt;&lt;/a&gt;示例&lt;/h2&gt;&lt;h3 id=&quot;取一个文本之中两行之间的数据&quot;&gt;&lt;a href=&quot;#取一个文本之中两行之间的数据&quot; class=&quot;headerlink&quot; titl
       
     
     </summary>
