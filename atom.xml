@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.cpucsi.com/"/>
-  <updated>2019-03-29T15:09:27.119Z</updated>
+  <updated>2019-03-30T14:17:18.190Z</updated>
   <id>http://www.cpucsi.com/</id>
   
   <author>
@@ -17,9 +17,57 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>sed</title>
+    <link href="http://www.cpucsi.com/20190330/sed/"/>
+    <id>http://www.cpucsi.com/20190330/sed/</id>
+    <published>2019-03-30T13:55:03.000Z</published>
+    <updated>2019-03-30T14:17:18.190Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="取一个文本之中两行之间的数据"><a href="#取一个文本之中两行之间的数据" class="headerlink" title="取一个文本之中两行之间的数据"></a>取一个文本之中两行之间的数据</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed -n <span class="string">'10-30p'</span> readme.md &gt;&gt; tmp.txt</span><br></pre></td></tr></table></figure><hr><h4 id="head与tail的小技巧"><a href="#head与tail的小技巧" class="headerlink" title="head与tail的小技巧"></a>head与tail的小技巧</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">head -n 100tmp.txt<span class="comment"># 显示前100行的数据</span></span><br><span class="line">tail -n 100 tmp.txt<span class="comment"># 显示后100行的数据</span></span><br><span class="line">tail -n +100 tmp.txt<span class="comment"># 显示100行之后的数据</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;取一个文本之中两行之间的数据&quot;&gt;&lt;a href=&quot;#取一个文本之中两行之间的数据&quot; class=&quot;headerlink&quot; title=&quot;取一个文本之中两行之间的数据&quot;&gt;&lt;/a&gt;取一个文本之中两行之间的数据&lt;/h3&gt;&lt;figure class=&quot;highlight 
+      
+    
+    </summary>
+    
+    
+      <category term="command" scheme="http://www.cpucsi.com/tags/command/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>江夏夜白-第八</title>
+    <link href="http://www.cpucsi.com/20190330/jiangxia-08/"/>
+    <id>http://www.cpucsi.com/20190330/jiangxia-08/</id>
+    <published>2019-03-30T13:17:29.000Z</published>
+    <updated>2019-03-30T14:08:48.166Z</updated>
+    
+    <content type="html"><![CDATA[<p>去毛主席紀念堂，敬花買像，登正陽門城樓，吃了兩碗滷煮，走大柵欄，在鐵樹斜街淘了本古詩玉屑，南回，補覺。</p><hr><p>新的課律剛剛開始，疲態盡顯，是會出現這樣的情況，但不能放任。不能把欺許當作欺詐，不能把景望變作失望。人怎樣才能事事如意，刻刻如意，這個很難，爲何不讓身體與精神一直緊繃，有念想就要去踐行，非黑即白，置之死地而後生。不能總在說，自己又在幹什麼。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;去毛主席紀念堂，敬花買像，登正陽門城樓，吃了兩碗滷煮，走大柵欄，在鐵樹斜街淘了本古詩玉屑，南回，補覺。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;新的課律剛剛開始，疲態盡顯，是會出現這樣的情況，但不能放任。不能把欺許當作欺詐，不能把景望變作失望。人怎樣才能事事如意，刻刻如意，這個很難，爲何不
+      
+    
+    </summary>
+    
+    
+      <category term="江夏" scheme="http://www.cpucsi.com/tags/%E6%B1%9F%E5%A4%8F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>江夏夜白-第七</title>
-    <link href="http://www.cpucsi.com/20190329/jiangxia-7/"/>
-    <id>http://www.cpucsi.com/20190329/jiangxia-7/</id>
+    <link href="http://www.cpucsi.com/20190329/jiangxia-07/"/>
+    <id>http://www.cpucsi.com/20190329/jiangxia-07/</id>
     <published>2019-03-29T15:06:53.000Z</published>
     <updated>2019-03-29T15:09:27.119Z</updated>
     
