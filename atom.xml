@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.cpucsi.com/"/>
-  <updated>2019-04-01T13:21:47.302Z</updated>
+  <updated>2019-04-02T14:52:33.317Z</updated>
   <id>http://www.cpucsi.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>江夏夜白-十二</title>
+    <link href="http://www.cpucsi.com/20190402/jiangxia-11/"/>
+    <id>http://www.cpucsi.com/20190402/jiangxia-11/</id>
+    <published>2019-04-02T14:47:34.000Z</published>
+    <updated>2019-04-02T14:52:33.317Z</updated>
+    
+    <content type="html"><![CDATA[<p>每天的工作都是在處理問題，解決部分顯現的問題，優化與重構，其實自己的工作大多的人都是很認可的，多少有些要交新朋友的感覺，工作的久了都對熱情有些回防了，少年，你也要熱情呀。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;每天的工作都是在處理問題，解決部分顯現的問題，優化與重構，其實自己的工作大多的人都是很認可的，多少有些要交新朋友的感覺，工作的久了都對熱情有些回防了，少年，你也要熱情呀。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="江夏" scheme="http://www.cpucsi.com/tags/%E6%B1%9F%E5%A4%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>江夏夜白-第十</title>
@@ -450,35 +474,6 @@
     
     
       <category term="daily" scheme="http://www.cpucsi.com/tags/daily/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git 学习记录</title>
-    <link href="http://www.cpucsi.com/20181114/git-manual/"/>
-    <id>http://www.cpucsi.com/20181114/git-manual/</id>
-    <published>2018-11-14T15:36:17.000Z</published>
-    <updated>2019-03-19T10:05:22.552Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="git简单模块划分"><a href="#git简单模块划分" class="headerlink" title="git简单模块划分"></a>git简单模块划分</h4><ul><li>工作区</li><li>缓存区</li><li>本地仓库</li><li>远程仓库</li></ul><hr><h4 id="创建本地仓库"><a href="#创建本地仓库" class="headerlink" title="创建本地仓库"></a>创建本地仓库</h4><blockquote><p>在创建仓库之前首先配置用户信息</p></blockquote><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">"noocl"</span></span><br><span class="line">git config --global user.email <span class="string">"songci1106@live.com"</span><span class="comment"># 这个是github帐户</span></span><br><span class="line">git config --global --list<span class="comment"># 查看全局配置</span></span><br><span class="line">mkdir repo-demo</span><br><span class="line"><span class="built_in">cd</span> repo-demo</span><br><span class="line">git init<span class="comment"># 初始化本地仓库</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"repo-demo content"</span> &gt; readme.md</span><br><span class="line">git add readme.md<span class="comment"># 把工作区修改的文件添加到缓存区</span></span><br><span class="line">git commmit -m <span class="string">"first commit"</span><span class="comment"># 把缓冲区的文件添加到版本库（本地仓库）</span></span><br><span class="line">git status<span class="comment"># 查看仓库状态</span></span><br></pre></td></tr></table></figure><hr><h4 id="把暂存区的文件恢复到工作区"><a href="#把暂存区的文件恢复到工作区" class="headerlink" title="把暂存区的文件恢复到工作区"></a>把暂存区的文件恢复到工作区</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">"cache content"</span> &gt;&gt; readme.md</span><br><span class="line">git add readme.md</span><br><span class="line">git reset HEAD readme.md<span class="comment"># 这步时readme.md的内容还没有回退</span></span><br><span class="line">git checkout -- readme.md<span class="comment"># 这步时内容进行回退</span></span><br></pre></td></tr></table></figure><hr><h4 id="回退版本"><a href="#回退版本" class="headerlink" title="回退版本"></a>回退版本</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">"version content"</span> &gt;&gt; readme.md</span><br><span class="line">git add readme.md</span><br><span class="line">git commit -m <span class="string">"second commit"</span></span><br><span class="line">git <span class="built_in">log</span><span class="comment"># 查看所有版本</span></span><br><span class="line">git reset --hard 版本号<span class="comment"># 回退到相应的版本</span></span><br><span class="line">清空本地仓库</span><br><span class="line">git rm readme.md<span class="comment"># 清空本地仓库文件</span></span><br><span class="line">git commit -m <span class="string">"delete readme.md"</span><span class="comment"># 提交</span></span><br></pre></td></tr></table></figure><hr><h4 id="本地仓库与远程仓库进行关联"><a href="#本地仓库与远程仓库进行关联" class="headerlink" title="本地仓库与远程仓库进行关联"></a>本地仓库与远程仓库进行关联</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"songci1106@live.com"</span><span class="comment"># 创建 SSH Key</span></span><br><span class="line">cat ~/.ssh/id_rsa.pub<span class="comment"># 打印密钥</span></span><br><span class="line"><span class="comment"># 登录github，把生成的密钥与github帐户进行绑定</span></span><br><span class="line">ssh -T git@github.com<span class="comment"># 检测本地与github能否连通</span></span><br></pre></td></tr></table></figure><h4 id="添加远程仓库"><a href="#添加远程仓库" class="headerlink" title="添加远程仓库"></a>添加远程仓库</h4><blockquote><p>先在github上面新建一个新仓库remote-demo。</p></blockquote><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">mkdir remote-demo &amp;&amp; mv remote-demo</span><br><span class="line">git init </span><br><span class="line"><span class="built_in">echo</span> <span class="string">"remote-demo content"</span> &gt; readme.md</span><br><span class="line">git add readme.md</span><br><span class="line">git commit -m <span class="string">"first commit"</span></span><br><span class="line">git remote add origin git@github.com:noocl/remote-demo.git<span class="comment"># 本地仓库的与github仓库的进行关联</span></span><br><span class="line"><span class="comment">## git pull origin master [--allow-unrelated-histories]# 提交到远程仓库</span></span><br><span class="line">git push -u origin master <span class="comment"># 提交到远程仓库</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"add new line content"</span> &gt;&gt; readme.md</span><br><span class="line">git add readme.md</span><br><span class="line">git commit -m <span class="string">"second commit"</span></span><br><span class="line">git push<span class="comment"># 第2次，直接提交</span></span><br></pre></td></tr></table></figure><hr><h4 id="克隆仓库"><a href="#克隆仓库" class="headerlink" title="克隆仓库"></a>克隆仓库</h4><blockquote><p>先在github上面创建一个仓库clone-demo</p></blockquote><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> git@github.com:noocl/<span class="built_in">clone</span>-demo.git<span class="comment"># 把远程仓库克隆到本地</span></span><br><span class="line"><span class="built_in">cd</span> <span class="built_in">clone</span>-demo</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"clone-demo"</span> &gt; readme.md</span><br><span class="line">git add readme.md</span><br><span class="line">git commit -m <span class="string">"first commit"</span></span><br><span class="line">git push<span class="comment"># 从本地仓库提交到远程仓库，直接push</span></span><br></pre></td></tr></table></figure><hr><h4 id="标签管理"><a href="#标签管理" class="headerlink" title="标签管理"></a>标签管理</h4><blockquote><p>前提：先在github上面创建一个远程仓库tag-demo</p></blockquote><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">mkdir tag-demo &amp;&amp; <span class="built_in">cd</span> tag-demo</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"tag-demo content"</span> &gt; readme.md</span><br><span class="line">git add readme.md</span><br><span class="line">git commit -m <span class="string">"first commit"</span></span><br><span class="line">git remote add origin git@github.com:noocl/tag-demo.git<span class="comment"># 与远程仓库进行关联</span></span><br><span class="line">git push -u origin master<span class="comment"># 提交到远程仓库</span></span><br><span class="line">git tag v1.0.1<span class="comment"># 创建标签</span></span><br><span class="line">git tag<span class="comment"># 查看所有标签</span></span><br><span class="line">git push origin v1.0.1<span class="comment"># 把标签提交到远程仓库</span></span><br><span class="line">git tag -d v1.0.1<span class="comment"># 删除本地仓库标签</span></span><br><span class="line">git push origin :refs/tags/v1.0.1<span class="comment"># 删除远程仓库标签</span></span><br></pre></td></tr></table></figure><hr><h4 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">mkdir branch-demo &amp;&amp; <span class="built_in">cd</span> branch-demo</span><br><span class="line">git init </span><br><span class="line"><span class="built_in">echo</span> <span class="string">"branch-demo content"</span> &gt; readme.md</span><br><span class="line">git add readme.md</span><br><span class="line">git commit -m <span class="string">"first commit"</span></span><br><span class="line">git branch br01<span class="comment"># 创建分支</span></span><br><span class="line">git branch<span class="comment"># 查看分支，行首的*表示当前分支</span></span><br><span class="line">git checkout br01<span class="comment"># 切换分支</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"br01 content"</span> &gt;&gt; readme.md</span><br><span class="line">git add readme.md</span><br><span class="line">git commit -m <span class="string">"branch commit"</span></span><br><span class="line"><span class="comment"># 现在要开始把tr01分支合并到master分支上，首先要切回到master分支</span></span><br><span class="line">git checkout master</span><br><span class="line">git merge br01</span><br><span class="line">git branch -d br01<span class="comment"># 删除分支</span></span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h4 id=&quot;git简单模块划分&quot;&gt;&lt;a href=&quot;#git简单模块划分&quot; class=&quot;headerlink&quot; title=&quot;git简单模块划分&quot;&gt;&lt;/a&gt;git简单模块划分&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;工作区&lt;/li&gt;
-&lt;li&gt;缓存区&lt;/li&gt;
-&lt;li&gt;本地仓库&lt;/li&gt;
-
-      
-    
-    </summary>
-    
-      <category term="map" scheme="http://www.cpucsi.com/categories/map/"/>
-    
-    
-      <category term="git" scheme="http://www.cpucsi.com/tags/git/"/>
     
   </entry>
   
