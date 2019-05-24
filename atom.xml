@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.cpucsi.com/"/>
-  <updated>2019-04-12T09:28:13.038Z</updated>
+  <updated>2019-05-24T07:38:57.047Z</updated>
   <id>http://www.cpucsi.com/</id>
   
   <author>
@@ -17,19 +17,98 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>江夏夜白-廿一</title>
-    <link href="http://www.cpucsi.com/20190412/jiangxia-21/"/>
-    <id>http://www.cpucsi.com/20190412/jiangxia-21/</id>
-    <published>2019-04-12T09:27:16.000Z</published>
-    <updated>2019-04-12T09:28:13.038Z</updated>
+    <title>windows10-start</title>
+    <link href="http://www.cpucsi.com/20190524/windows10-start/"/>
+    <id>http://www.cpucsi.com/20190524/windows10-start/</id>
+    <published>2019-05-24T02:41:55.000Z</published>
+    <updated>2019-05-24T07:38:57.047Z</updated>
     
-    <content type="html"><![CDATA[<p>補寫日誌。</p>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>当要与一台新的电脑开启一段旅程前，需要做些什么。以下是基于 <code>Windows 10</code> 的文字。</p></blockquote><hr><h2 id="0-准备"><a href="#0-准备" class="headerlink" title="0 准备"></a>0 准备</h2><ul><li>在 <a href="https://msdn.itellyou.cn/" target="_blank" rel="noopener">msdn</a> 上下载镜像文件</li><li>制作PE启动盘（也可以直接硬盘安装）</li><li>激活工具KMS</li><li>常用的软件（个人会把常用的软件及配置放在移动硬盘，省去不必要的重复与苦嗟）</li></ul><h2 id="1-系统的设置"><a href="#1-系统的设置" class="headerlink" title="1 系统的设置"></a>1 系统的设置</h2><h3 id="10-启用Administrator用户权限"><a href="#10-启用Administrator用户权限" class="headerlink" title="10 启用Administrator用户权限"></a>10 启用Administrator用户权限</h3><p>在安装系统的时候，是无法创建 <code>Administrator</code> 用户的，因为系统中已经存在，只是没有启用。<br>以管理员身份运行命令提示符，执行如下命令：<br><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">net</span> user administrator /active:yes</span><br></pre></td></tr></table></figure></p><p>然后注销，选择Administrator用户登录，打开命令提示符，删除之前创建的用户 <code>laoda</code> ，命令如下：<br><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">net</span> user laoda /<span class="built_in">del</span></span><br></pre></td></tr></table></figure></p><h3 id="11-系统激活"><a href="#11-系统激活" class="headerlink" title="11 系统激活"></a>11 系统激活</h3><p>常用的方式是KMS激活工具，由于系统安全机制过高，会把激活工具识别为病毒程序而隔离。依次打开 <code>Windows 安全中心</code> &gt; <code>病毒和威胁防护</code> &gt; <code>&quot;病毒和威胁防护&quot;设置</code> &gt; <code>排除项</code> &gt; <code>添加或删除排除项</code>，然后把KMS所有的路径添加上即可。</p><hr><h2 id="2-常用软件的安装与配置"><a href="#2-常用软件的安装与配置" class="headerlink" title="2 常用软件的安装与配置"></a>2 常用软件的安装与配置</h2><h3 id="对文件的几点要求"><a href="#对文件的几点要求" class="headerlink" title="对文件的几点要求"></a>对文件的几点要求</h3><ul><li>所有的程序都要安装在 <code>d:\app</code> 或 <code>d:\dev</code> 路径下。</li><li>如果软件有绿色版本，就安装绿色版本。</li><li>软件要目录名尽量不要加版本号，尽量不要有空格。</li></ul><h3 id="创建适用于自己的目录结构，如下："><a href="#创建适用于自己的目录结构，如下：" class="headerlink" title="创建适用于自己的目录结构，如下："></a>创建适用于自己的目录结构，如下：</h3><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">d:</span></span><br><span class="line"><span class="function"><span class="title">md</span> <span class="title">app</span>\.<span class="title">quickstart</span> <span class="title">dev</span> <span class="title">doc</span>\<span class="title">book</span> <span class="title">doc</span>\<span class="title">download</span>\<span class="title">QQ</span> <span class="title">doc</span>\<span class="title">download</span>\<span class="title">Wechat</span> <span class="title">Files</span> <span class="title">doc</span>\<span class="title">download</span>\<span class="title">QQBrowser</span> <span class="title">doc</span>\<span class="title">download</span>\360<span class="title">Browser</span> <span class="title">doc</span>\<span class="title">download</span>\<span class="title">nutstore</span> <span class="title">temp</span> <span class="title">work</span></span></span><br></pre></td></tr></table></figure><p>TotalCommand</p><h3 id="VimDesktop"><a href="#VimDesktop" class="headerlink" title="VimDesktop"></a>VimDesktop</h3><ul><li>把 <code>D:\app\VimDesktop\vimd.exe</code> 快捷方式，放到 <code>%appdata%\Microsoft\Windows\Start Menu\Programs\Startup</code> 目录下以开机自启。</li><li><code>D:\app\VimDesktop\vimd.ahk</code> 文件中主要存放的是VimDesktop的默认程序及自己追加的关于AutoHotKey的便捷定义。</li></ul><h3 id="浏览器插件的安装与配置"><a href="#浏览器插件的安装与配置" class="headerlink" title="浏览器插件的安装与配置"></a>浏览器插件的安装与配置</h3><p>对于Chromium内核的浏览器，可以在 <a href="chromefor.com">chromefor.com</a> 网站下载插件。</p><ul><li><p>surfingkeys</p>  <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">settings.hintAlign = <span class="string">"left"</span>;    <span class="comment"># 链接左对齐</span></span><br></pre></td></tr></table></figure></li><li><p>stylish</p>  <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://userstyles.org/styles/115633/consolas-1     <span class="comment"># 全局等宽字体</span></span><br></pre></td></tr></table></figure></li><li><p>uBlock Origin    </p></li></ul><hr><h2 id="3-开发环境的安装与配置"><a href="#3-开发环境的安装与配置" class="headerlink" title="3 开发环境的安装与配置"></a>3 开发环境的安装与配置</h2><h3 id="JDK环境变量设置"><a href="#JDK环境变量设置" class="headerlink" title="JDK环境变量设置"></a>JDK环境变量设置</h3><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">JAVA_HOME = D:\app\Java\jdk1.<span class="number">8</span>.<span class="number">0</span>_191\</span><br><span class="line"><span class="built_in">PATH</span> = <span class="variable">%JAVA_HOME%</span>\bin</span><br><span class="line">CLASSPATH = .;<span class="variable">%JAVA_HOME%</span>\lib\tools.jar;</span><br></pre></td></tr></table></figure><h3 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h3><p>### </p><hr><h2 id="4-常用快捷键的配置"><a href="#4-常用快捷键的配置" class="headerlink" title="4 常用快捷键的配置"></a>4 常用快捷键的配置</h2><h3 id="先要约束"><a href="#先要约束" class="headerlink" title="先要约束"></a>先要约束</h3><ul><li>尽量不要使用快捷键来启动应用程序，主要是因为快捷键会冲突。</li><li>如果要使用快捷键，要清楚哪些软件会有这个快捷键的设置。</li></ul><h3 id="常用快捷应用"><a href="#常用快捷应用" class="headerlink" title="常用快捷应用"></a>常用快捷应用</h3><ul><li>glodenedit<br>  <code>Alt+S</code></li><li>QQ<br>  <code>Alt+Q</code></li><li>WeChat<br>  <code>Alt+W</code></li></ul><hr><h2 id="5-应用的快速启动"><a href="#5-应用的快速启动" class="headerlink" title="5 应用的快速启动"></a>5 应用的快速启动</h2><p>创建一个 <code>d:\app\.quickstart</code> 目录，在此目录中放入应用程序的快捷方式，<code>*.lnk</code> 格式的文件名长度不要超过4位，然后把此目录加入到环境变量，以后打开应用程序都是通过 <code>Wint+R</code> 的方式。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;補寫日誌。&lt;/p&gt;
+        &lt;blockquote&gt;
+&lt;p&gt;当要与一台新的电脑开启一段旅程前，需要做些什么。以下是基于 &lt;code&gt;Windows 10&lt;/code&gt; 的文字。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;0-准备&quot;&gt;&lt;a href=&quot;#0-准备&quot; class=&quot;heade
+      
+    
+    </summary>
+    
+    
+      <category term="system" scheme="http://www.cpucsi.com/tags/system/"/>
+    
+      <category term="windows" scheme="http://www.cpucsi.com/tags/windows/"/>
+    
+      <category term="environmet" scheme="http://www.cpucsi.com/tags/environmet/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>江夏夜白-廿三</title>
+    <link href="http://www.cpucsi.com/20190414/jiangxia-23/"/>
+    <id>http://www.cpucsi.com/20190414/jiangxia-23/</id>
+    <published>2019-04-14T00:43:13.000Z</published>
+    <updated>2019-04-15T00:54:43.530Z</updated>
+    
+    <content type="html"><![CDATA[<p>南鑼鼓巷好多漢服姑娘、鼓樓擊鼓表演閉目如奔馬、後海本海前海走了一圈，在北海北地鐵站吃含糊的面與餅。<br>我應該學門老來消遣歲月的通俗技藝，能融入人羣中去，到此時我仍斯守不住寂寞。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;南鑼鼓巷好多漢服姑娘、鼓樓擊鼓表演閉目如奔馬、後海本海前海走了一圈，在北海北地鐵站吃含糊的面與餅。&lt;br&gt;我應該學門老來消遣歲月的通俗技藝，能融入人羣中去，到此時我仍斯守不住寂寞。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="江夏" scheme="http://www.cpucsi.com/tags/%E6%B1%9F%E5%A4%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>江夏夜白-廿二</title>
+    <link href="http://www.cpucsi.com/20190413/jiangxia-22/"/>
+    <id>http://www.cpucsi.com/20190413/jiangxia-22/</id>
+    <published>2019-04-13T00:34:59.000Z</published>
+    <updated>2019-04-15T00:42:49.212Z</updated>
+    
+    <content type="html"><![CDATA[<p>身則首一，五。<br>從中夜到破曉，幾個人。世界真是奇妙又讓人心往。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;身則首一，五。&lt;br&gt;從中夜到破曉，幾個人。世界真是奇妙又讓人心往。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="江夏" scheme="http://www.cpucsi.com/tags/%E6%B1%9F%E5%A4%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>江夏夜白-廿一</title>
+    <link href="http://www.cpucsi.com/20190412/jiangxia-21/"/>
+    <id>http://www.cpucsi.com/20190412/jiangxia-21/</id>
+    <published>2019-04-12T09:27:16.000Z</published>
+    <updated>2019-04-15T00:39:48.277Z</updated>
+    
+    <content type="html"><![CDATA[<p>補寫日誌。<br>身則首一，四。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;補寫日誌。&lt;br&gt;身則首一，四。&lt;/p&gt;
 
       
     
@@ -415,68 +494,6 @@
       
       
         &lt;p&gt;就這樣喊上了呀。&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-      <category term="江夏" scheme="http://www.cpucsi.com/tags/%E6%B1%9F%E5%A4%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>江夏夜白-第五</title>
-    <link href="http://www.cpucsi.com/20190327/jiangxia-05/"/>
-    <id>http://www.cpucsi.com/20190327/jiangxia-05/</id>
-    <published>2019-03-27T04:35:29.000Z</published>
-    <updated>2019-03-28T04:46:40.929Z</updated>
-    
-    <content type="html"><![CDATA[<p>该怎麼稱呼才好呢，哈哈，兩個奇怪的人呀。竟然會害羞呀。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;该怎麼稱呼才好呢，哈哈，兩個奇怪的人呀。竟然會害羞呀。&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-      <category term="江夏" scheme="http://www.cpucsi.com/tags/%E6%B1%9F%E5%A4%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ftp</title>
-    <link href="http://www.cpucsi.com/20190326/ftp/"/>
-    <id>http://www.cpucsi.com/20190326/ftp/</id>
-    <published>2019-03-26T15:47:16.000Z</published>
-    <updated>2019-03-26T15:47:16.691Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>江夏夜白-第四</title>
-    <link href="http://www.cpucsi.com/20190326/jiangxia-04/"/>
-    <id>http://www.cpucsi.com/20190326/jiangxia-04/</id>
-    <published>2019-03-26T04:20:02.000Z</published>
-    <updated>2019-04-12T08:39:09.634Z</updated>
-    
-    <content type="html"><![CDATA[<p>聽後，向客服請教不熬夜也可以享受優惠的方法。<br>在網上搜索可愛萌萌的女生該用什麼色號的口紅。<br>洗面與燒瞼。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;聽後，向客服請教不熬夜也可以享受優惠的方法。&lt;br&gt;在網上搜索可愛萌萌的女生該用什麼色號的口紅。&lt;br&gt;洗面與燒瞼。&lt;/p&gt;
 
       
     
