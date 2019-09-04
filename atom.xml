@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.cpucsi.com/"/>
-  <updated>2019-09-04T02:11:25.364Z</updated>
+  <updated>2019-09-04T06:02:37.803Z</updated>
   <id>http://www.cpucsi.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://www.cpucsi.com/20190904/1908-gohome/"/>
     <id>http://www.cpucsi.com/20190904/1908-gohome/</id>
     <published>2019-09-04T01:56:33.000Z</published>
-    <updated>2019-09-04T02:11:25.364Z</updated>
+    <updated>2019-09-04T06:02:37.803Z</updated>
     
     <content type="html"><![CDATA[<p>八月末，處暑已過，武漢燭日依舊。</p>]]></content>
     
@@ -35,6 +35,8 @@
     
     </summary>
     
+    
+      <category term="hide" scheme="http://www.cpucsi.com/tags/hide/"/>
     
   </entry>
   
